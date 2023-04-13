@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* 로고 이미지를 중앙에 배치하고 크기를 지정합니다 */
+    #edcanLogo {
+      display: block;
+      margin: 0 auto;
+      width: 400px;
+      height: 200px;
+    }
+  
+    /* fieldset 스타일을 지정합니다 */
+    fieldset {
+      border: none;
+      padding: 20px;
+      width: 400px;
+      margin: 0 auto;
+    }
+  
+    /* 입력 폼 관련 스타일을 지정합니다 */
+    .input_wrap {
+      margin-top: 20px;
+    }
+  
+    .input_box {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .input_box label {
+      display: inline-block;
+      width: 80px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    .input_text {
+      padding: 5px;
+      border: 1px solid #ccc;
+      width: 250px;
+    }
+  
+    .check_box {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  
+    .check_box label {
+      margin-left: 10px;
+    }
+  
+    .btn_area {
+      margin-top: 10px;
+      text-align: right;
+    }
+  
+    .btn_area a {
+      margin-left: 10px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  
+    .btn_submit {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #3399ff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <img id="edcanLogo" src="https://edcan.kr/img/EDCAN_LOGO.svg">
+  
+  <fieldset>
+    <legend>로그인 정보 입력</legend>
+    <div class="input_wrap">
+      <span class="input_box">
+        <label for="id">아이디</label>
+        <input type="text" name="i" id="id" maxlength="25" value="" class="input_text" title="아이디" placeholder="아이디">
+      </span>
+      <span class="input_box">
+        <label for="pw">비밀번호</label>
+        <input type="password" name="c" id="pw" maxlength="16" value="" class="input_text" title="비밀번호" placeholder="비밀번호">
+      </span>
+      <span class="check_box">
+        <input type="checkbox" name="" class="input_check" id="id_save">
+        <label for="id_save">아이디 저장</label>
+      </span>
+      <span class="btn_area">
+        <a href="">회원가입</a>
+        <a href="">아이디 찾기</a>
+        <a href="">비밀번호 재발급</a>
+      </span>
+      <button type="submit" class="btn_submit">로그인</button>
+    </div>
+  </fieldset>
+  
+</body>
+
+</html>
